@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-bg-primary text-text-primary font-sans;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		@apply font-mono;
+	}
+}
+
+@layer utilities {
+	.terminal-effect {
+		@apply transition-all duration-200 hover:shadow-lg hover:shadow-primary/20;
+	}
+
+	.code-comment {
+		@apply text-accent-green italic;
+	}
+
+	.syntax-string {
+		@apply text-accent-teal;
+	}
+
+	.syntax-number {
+		@apply text-accent-orange;
+	}
+}
